@@ -1,6 +1,7 @@
 import React from 'react'
 import Primarybtn from '../components/buttons/Primarybtn'
 import sslogo from '/sslogo.svg'
+import { Hamburger, HamburgerIcon, LucideHamburger, Menu } from 'lucide-react'
 
 function Navbar() {
   return (
@@ -10,9 +11,12 @@ function Navbar() {
 
             <p className='text-2xl '>Startup Saga 5.0</p>
         </div>
-        <div className='flex flex-row gap-6'>
+        <div className='hidden lg:flex flex-row gap-6'>
             <Primarybtn label="Brochure"/>
             <Primarybtn label="Sponsor Us"/>
+        </div>
+        <div className='flex lg:hidden'>
+            <Menu/>
         </div>
     </div>
   )

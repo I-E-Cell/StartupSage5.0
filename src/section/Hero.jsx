@@ -16,16 +16,6 @@ function Hero() {
             <p>[NextNiche]</p>
         </div>
         <div className="w-fit">
-            {/* <div className="flex flex-row ">
-                <p className="text-[clamp(4.5rem,8vw,12rem)]">Startup Saga 5.0</p>
-                <img src={treasure} className="h-32" alt="" />
-            </div>
-            <div className="flex flex-row items-center">
-                <p className="text-[clamp(4.5rem,8vw,12rem)] ">Coming</p>
-                <img src={moon} className="h-32" alt="" />
-                <p className="text-[clamp(4.5rem,8vw,12rem)]">Soon</p>
-                <p className="">[Expo]</p>
-            </div> */}
             <div className="w-fit">
                 <div className="w-fit flex flex-row items-center">
 
@@ -46,9 +36,9 @@ function Hero() {
         </div>
         <div className="ml-[35%] mt-6">[StandUp]</div>
       </div>
-      <div className="flex flex-row justify-between w-full mb-16 border-b py-4">
+      <div className="flex flex-row justify-between items-center w-full mb-16 border-b py-4">
         <div>
-          <p>/ Play the Game, Earn the Profits!</p>
+          <p className="lg:text-xl text-sm ">/ Play the Game, Earn the Profits!</p>
         </div>
         <div className="flex flex-row gap-3">
           <Loginbtn label="Brochure" />
