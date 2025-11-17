@@ -51,8 +51,8 @@ function Hero() {
           <p>/ Play the Game, Earn the Profits!</p>
         </div>
         <div className="flex flex-row gap-3">
-          <Loginbtn label="Login" />
-          <Signupbtn label="Sign UP" />
+          <Loginbtn label="Brochure" />
+          <Signupbtn label="Contact Us" />
         </div>
       </div>
     </>
