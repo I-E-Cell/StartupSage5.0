@@ -6,7 +6,7 @@ import Navbar from './section/Navbar.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <div className='bg-[rgb(240,241,240)] h-screen w-screen flex flex-col items-center'>
+    <div className='bg-[rgb(240,241,240)] h-screen w-screen flex flex-col items-center px-8'>
         <Navbar/>
         <Hero />
     </div>
