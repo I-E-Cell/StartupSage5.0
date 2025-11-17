@@ -8,24 +8,41 @@ import moon from "/moon.svg";
 function Hero() {
   return (
     <>
-      <div className="flex w-full h-full flex-col gap-y-2 justify-center items-start font-semibold relative">
-        <div className="mb-4 self-center">
+      <div className="flex w-full h-full flex-col lg:gap-y-2 gap-y-12 justify-center items-start font-semiboldx">
+        <div className="lg:mb-4  self-center">
             <p>[SharkTank AIT]</p>
         </div>
-        <div className="ml-[20%]">
+        <div className="lg:ml-[20%]">
             <p>[NextNiche]</p>
         </div>
-        <div>
-            <div className="flex flex-row">
-                <p className="text-8xl">Startup Saga 5.0</p>
+        <div className="w-fit">
+            {/* <div className="flex flex-row ">
+                <p className="text-[clamp(4.5rem,8vw,12rem)]">Startup Saga 5.0</p>
                 <img src={treasure} className="h-32" alt="" />
             </div>
-            <div className="flex flex-row w-full items-center gap-x-8">
-                <p className="text-8xl text-nowrap">Coming</p>
+            <div className="flex flex-row items-center">
+                <p className="text-[clamp(4.5rem,8vw,12rem)] ">Coming</p>
                 <img src={moon} className="h-32" alt="" />
-                <p className="text-8xl text-nowrap">Coming</p>
-                <p className="pl-[5%] pt-6">[Expo]</p>
+                <p className="text-[clamp(4.5rem,8vw,12rem)]">Soon</p>
+                <p className="">[Expo]</p>
+            </div> */}
+            <div className="w-fit">
+                <div className="w-fit flex flex-row items-center">
+
+                    <p className="text-[clamp(2.3rem,7.5vw,12rem)] text-nowrap">Startup Saga 5.0</p>
+                    <img src={treasure} className="lg:h-22 h-17 mt-4" alt="" />
+                </div>
             </div>
+            <div className="w-fit">
+                <div className="w-fit flex flex-row items-center">
+
+                    <p className="text-[clamp(2.3rem,7.5vw,12rem)] text-nowrap">Coming</p>
+                    <img src={moon} className="lg:h-22 h-17 mt-4" alt="" />
+                    <p className="text-[clamp(2.3rem,7.5vw,12rem)] text-nowrap">Soon</p>
+                    <p className="mt-8">[Expo]</p>
+                </div>
+            </div>
+
         </div>
         <div className="ml-[35%] mt-6">[StandUp]</div>
       </div>
