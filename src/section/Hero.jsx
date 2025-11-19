@@ -23,7 +23,7 @@ function Hero() {
           </div>
 
           <div className="flex flex-row items-center gap-4 flex-wrap">
-            <p className="text-[clamp(2.0rem,7.5vw,6rem)] leading-none font-rainy ">Coming</p>
+            <p className="text-[clamp(2.3rem,7.5vw,6rem)] leading-none font-rainy ">Coming</p>
             <img src={moon} className="lg:h-24 h-17 mt-2 max-w-24 object-contain" alt="moon" />
             <p className="text-[clamp(2.3rem,7.5vw,6rem)] font-jetbrains-regular leading-none tracking-tight">Soon</p>
             <p className="mt-6 lg:mt-2 md:ml-0 ml-[30vw] ">[Expo]</p>
