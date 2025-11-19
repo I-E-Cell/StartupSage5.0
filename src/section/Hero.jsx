@@ -33,7 +33,7 @@ function Hero() {
         <div className="mt-6 ml-[55vw]">[StandUp]</div>
       </div>
 
-      <div className="flex flex-row justify-between items-center w-full mb-16 border-b py-4">
+      <div className="flex flex-row justify-between items-center mt-18 md:mt-4 w-full mb-16 border-b py-4">
         <div>
           <p className="lg:text-xl text-sm">/ Play the Game, Earn the Profits!</p>
         </div>
