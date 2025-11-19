@@ -9,7 +9,7 @@ function Navbar() {
         <div className='flex flex-row justify-center items-center gap-4'>
             <img src={sslogo} className='w-8' alt="" />
 
-            <p className='text-2xl '>Startup Saga 5.0</p>
+            <p className='md:text-3xl text-2xl  font-rainy font-semibold  '>Startup Saga 5.0</p>
         </div>
         <div className='hidden lg:flex flex-row gap-6'>
             <Primarybtn label="Brochure"/>
