@@ -7,7 +7,7 @@ import moon from "/moon.svg";
 function Hero() {
   return (
     <>
-      <div className="w-full h-screen flex flex-col gap-4 justify-center items-start font-semibold">
+      <div className="w-full flex flex-col gap-4 justify-center items-start font-semibold">
 
         <div className="ml-[40vw] mt-3 self-start">
           <p>[NextNiche]</p>
