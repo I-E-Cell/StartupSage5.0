@@ -1,49 +1,98 @@
 import React from "react";
-import Loginbtn from "../components/buttons/Loginbtn";
-import Signupbtn from "../components/buttons/Signupbtn";
-import treasure from "/treasure.svg";
-import moon from "/moon.svg";
+import { motion } from "framer-motion";
+import Heading from "../components/Heading";
+import Navbar from "../components/Navbar";
+import YellowP from "/assets/images/yellow-plush.webp";
+import BlueP from "/assets/images/blue-plush.webp";
+import Mario from "/assets/images/mario.webp";
+import Map from "/assets/images/Map.webp";
 
-function Hero() {
+const Hero = () => {
+  const floatVariants = {
+    animate: {
+      y: [0, -20, 0],
+      transition: {
+        duration: 3,
+        repeat: Infinity,
+        ease: "easeInOut",
+      },
+    },
+  };
+
   return (
-    <>
-      <div className="w-full flex flex-col gap-6 justify-center items-start font-semibold">
+    <div className="relative bg-[#0064C8] w-full h-[140vh] md:px-24 flex flex-col gap-24 ">
+      <Navbar />
+      {/* mario animation */}
+      <motion.div
+        className="absolute left-0 top-0 w-full h-full"
+        initial="initial"
+        animate="animate"
+        onAnimationComplete={() => {}}
+      >
+        <motion.div animate="animate" variants={floatVariants}>
+          <img
+            className="w-1/2 -translate-x-[10%] transform scale-x-[-1]"
+            src={Mario}
+            alt=""
+          />
+        </motion.div>
+      </motion.div>
 
-        <div className="ml-[40vw] mt-6 self-start">
-          <p>[NextNiche]</p>
-        </div>
-        <div className="ml-[15vw] mt-6 self-start">
-          <p>[SharkTank AIT]</p>
-        </div>
+      {/* Blue Plushy animation */}
+      <motion.div
+        className="absolute top-1/3 left-[65%]"
+        initial="initial"
+        animate="animate"
+      >
+        <motion.div animate="animate" variants={floatVariants}>
+          <img className="w-32" src={BlueP} alt="" />
+        </motion.div>
+      </motion.div>
 
-        <div className="flex flex-col items-start gap-4 w-full">
-          <div className="flex flex-row items-center gap-4 flex-wrap">
-            <p className="text-[clamp(2.0rem,7.5vw,6rem)] font-jetbrains-regular leading-none tracking-tight">Startup Saga <span className="font-rainy font-light">5.0</span></p>
-            <img src={treasure} className="lg:h-24 h-17 mt-2 max-w-24 object-contain" alt="treasure" />
+      {/* Yellow Plushy animation */}
+      <motion.div
+        className="absolute left-[25%] w-full h-full"
+        initial="initial"
+        animate="animate"
+      >
+        <motion.div animate="animate" variants={floatVariants}>
+          <img className="w-32" src={YellowP} alt="" />
+        </motion.div>
+      </motion.div>
+
+      {/* main heading */}
+      <div className="flex flex-col gap-12 justify-center items-center">
+        <Heading />
+        {/* tagline */}
+        <p
+          className="text-2xl font-bold text-white uppercase font-[superMario] tracking-widest"
+          style={{ filter: "drop-shadow(0px 4px 4px rgba(0,0,0,1))" }}
+        >
+          From Ore to Empire
+        </p>
+        {/* event dates */}
+        <div
+          className="w-1/2 h-96 px-10 py-6 text-9xl font-[superMario] text-gray-900 flex gap-6 justify-center items-center"
+          style={{
+            background: `url(${Map})`,
+            backgroundSize: "95%",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          <div className="flex flex-col justify-center items-center">
+            <p>10</p>
+            <p className="text-5xl">Jan</p>
           </div>
-
-          <div className="flex flex-row items-center gap-4 flex-wrap">
-            <p className="text-[clamp(2.3rem,7.5vw,6rem)] leading-none font-rainy ">Coming</p>
-            <img src={moon} className="lg:h-24 h-17 mt-2 max-w-24 object-contain" alt="moon" />
-            <p className="text-[clamp(2.3rem,7.5vw,6rem)] font-jetbrains-regular leading-none tracking-tight">Soon</p>
-            <p className="mt-6 lg:mt-2 md:ml-0 ml-[30vw] ">[Expo]</p>
+          <p>-</p>
+          <div className="flex flex-col justify-center items-center">
+            <p>15</p>
+            <p className="text-5xl">Jan</p>
           </div>
         </div>
-
-        <div className="mt-6 ml-[55vw]">[StandUp]</div>
       </div>
-
-      <div className="flex flex-row justify-between items-center mt-18 md:mt-4 w-full mb-16 border-b py-4">
-        <div>
-          <p className="lg:text-xl text-sm font-jetbrains-regular">/ Play the Game, Earn the Profits!</p>
-        </div>
-        <div className="flex flex-row gap-3">
-          <Loginbtn label="Brochure" />
-          <Signupbtn label="Contact Us" />
-        </div>
-      </div>
-    </>
+    </div>
   );
-}
+};
 
 export default Hero;
