@@ -204,15 +204,15 @@ const PastSponsors = () => {
       </motion.div>
 
       {/* Heading */}
-      <div className="text-9xl font-[superMario] font-bold text-white flex flex-col items-center">
+      <div className="text-5xl md:text-7xl lg:text-9xl font-[superMario] font-bold text-white flex flex-col items-center px-4">
         <p
           style={{ filter: "drop-shadow(0px 8px 0px rgba(0,0,0,1))" }}
-          className="text-4xl z-20 text-red-600"
+          className="text-2xl md:text-3xl lg:text-4xl z-20 text-red-600"
         >
           Our Past
         </p>
         <p
-          className="-mt-6"
+          className="-mt-3 md:-mt-4 lg:-mt-6"
           style={{ filter: "drop-shadow(0px 12px 0px rgba(0,0,0,1))" }}
         >
           Sponsors
@@ -220,11 +220,11 @@ const PastSponsors = () => {
       </div>
 
       {/* sponsor container */}
-      <div className="flex flex-wrap gap-12 items-center justify-center mt-24 px-32">
+      <div className="flex flex-wrap gap-6 md:gap-8 lg:gap-12 items-center justify-center mt-12 md:mt-16 lg:mt-24 px-4 md:px-16 lg:px-32">
         {sponsors.map((sponsor, index) => (
           <div
             key={index}
-            className="relative flex items-center justify-center flex-col overflow-hidden bg-white w-80 h-60 border-4 rounded-xl rounded-tl-4xl rounded-br-4xl border-gray-900"
+            className="relative flex items-center justify-center flex-col overflow-hidden bg-white w-64 md:w-72 lg:w-80 h-48 md:h-56 lg:h-60 border-3 md:border-4 rounded-xl rounded-tl-3xl md:rounded-tl-4xl rounded-br-3xl md:rounded-br-4xl border-gray-900"
           >
             {/* sponsor image */}
             <div

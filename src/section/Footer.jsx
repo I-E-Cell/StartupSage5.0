@@ -41,10 +41,10 @@ const Footer = () => {
       </div>
 
       {/* map */}
-      <div className="px-6 py-6 flex gap-6 justify-center items-center mt-16 w-1/3 relative">
+      <div className="px-4 md:px-6 py-6 flex gap-6 justify-center items-center mt-8 md:mt-16 w-11/12 md:w-2/3 lg:w-1/3 relative">
         <img src={Map} className="absolute top-0" alt="" />
         <iframe
-          class="rounded-sm w-full h-64 z-50 border-3"
+          class="rounded-sm w-full h-48 md:h-56 lg:h-64 z-50 border-3"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.64883570219!2d73.87434400449611!3d18.607325966357873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c70090000001%3A0x160a20f3d0273495!2sArmy%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1700741837638!5m2!1sen!2sin"
         ></iframe>
       </div>

@@ -21,7 +21,7 @@ const PrizePool = () => {
   };
   return (
     <div
-      className="relative w-full h-[120vh] bg-black text-white flex justify-center items-center"
+      className="relative w-full min-h-screen md:h-[120vh] bg-black text-white flex justify-center items-center px-4"
       style={{
         background: `url(${BlPattern})`,
         backgroundSize: "50%",
@@ -39,7 +39,7 @@ const PrizePool = () => {
 
       {/* card */}
       <div
-        className="h-3/4 w-3/4 font-[superMario] flex flex-col gap-4 justify-center items-center text-8xl text-black"
+        className="h-64 md:h-2/3 lg:h-3/4 w-11/12 md:w-3/4 font-[superMario] flex flex-col gap-2 md:gap-4 justify-center items-center text-4xl md:text-6xl lg:text-8xl text-black"
         style={{
           background: `url(${Prize})`,
           backgroundSize: "cover",

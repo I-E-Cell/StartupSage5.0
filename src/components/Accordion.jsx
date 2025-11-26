@@ -99,15 +99,15 @@ const Accordion = () => {
   };
 
   return (
-    <div className="w-full flex items-center justify-center px-44">
+    <div className="w-full flex items-center justify-center px-4 md:px-12 lg:px-24 xl:px-44">
       <div className="w-full">
         {/* Category Tabs */}
-        <div className="flex w-full justify-around mb-8">
+        <div className="flex w-full justify-around mb-6 md:mb-8 gap-2 overflow-x-auto">
           {categories.map((category, index) => (
             <button
               key={index}
               onClick={() => handleCategoryChange(index)}
-              className={`relative px-6 py-3 rounded-md font-semibold whitespace-nowrap transition-colors ${
+              className={`relative px-3 md:px-6 py-2 md:py-3 rounded-md font-semibold whitespace-nowrap transition-colors text-sm md:text-base ${
                 activeCategory === index
                   ? "text-white"
                   : "text-gray-600 hover:text-gray-800"
@@ -146,16 +146,16 @@ const Accordion = () => {
                 {/* Accordion Header */}
                 <button
                   onClick={() => toggleAccordion(index)}
-                  className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-gray-50 transition-colors"
+                  className="w-full px-4 md:px-6 py-3 md:py-4 flex items-center justify-between text-left hover:bg-gray-50 transition-colors"
                 >
-                  <span className="text-lg font-semibold text-gray-800">
+                  <span className="text-base md:text-lg font-semibold text-gray-800 pr-4">
                     {item.title}
                   </span>
                   <motion.div
                     animate={{ rotate: openIndex === index ? 180 : 0 }}
                     transition={{ duration: 0.3 }}
                   >
-                    <ChevronDown className="w-5 h-5 text-gray-600" />
+                    <ChevronDown className="w-4 h-4 md:w-5 md:h-5 text-gray-600 shrink-0" />
                   </motion.div>
                 </button>
 
@@ -172,7 +172,7 @@ const Accordion = () => {
                       }}
                       className="overflow-hidden"
                     >
-                      <div className="px-6 py-4 text-gray-600 border-t border-gray-100">
+                      <div className="px-4 md:px-6 py-3 md:py-4 text-sm md:text-base text-gray-600 border-t border-gray-100">
                         {item.content}
                       </div>
                     </motion.div>

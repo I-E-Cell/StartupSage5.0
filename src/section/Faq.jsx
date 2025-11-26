@@ -13,11 +13,11 @@ const Faq = () => {
 
       {/* heading */}
       <div
-        className="text-9xl flex items-end gap-2 font-[superMario] text-green-500"
+        className="text-5xl md:text-7xl lg:text-9xl flex items-end gap-2 font-[superMario] text-green-500"
         style={{ filter: "drop-shadow(0px 12px 0px rgba(0,0,0,1))" }}
       >
         <p>FAQ</p>
-        <p className="text-5xl mb-4">s</p>
+        <p className="text-2xl md:text-4xl lg:text-5xl mb-2 md:mb-4">s</p>
       </div>
 
       <Accordion />

@@ -37,30 +37,30 @@ const CountDown = ({ targetDate }) => {
   const pad = (num) => String(num).padStart(2, "0");
 
   return (
-    <div className="flex justify-center text-white font-bold text-xl font-[superMario]">
-      <div className="py-2 px-4 flex flex-col gap-0 items-center justify-center">
-        <p className="text-8xl">
+    <div className="flex justify-center text-white font-bold text-sm md:text-lg lg:text-xl font-[superMario] gap-0 md:gap-2">
+      <div className="py-1 md:py-2 px-2 md:px-4 flex flex-col gap-0 items-center justify-center">
+        <p className="text-3xl md:text-5xl lg:text-7xl xl:text-8xl">
           {pad(timeLeft.days)}:
         </p>
-        <p className="uppercase">Days</p>
+        <p className="uppercase text-xs md:text-sm lg:text-base">Days</p>
       </div>
-      <div className="py-2 px-4 flex flex-col gap-0 items-center justify-center -ml-4">
-        <p className="text-8xl">
+      <div className="py-1 md:py-2 px-2 md:px-4 flex flex-col gap-0 items-center justify-center -ml-2 md:-ml-4">
+        <p className="text-3xl md:text-5xl lg:text-7xl xl:text-8xl">
           {pad(timeLeft.hours)}:
         </p>
-        <p>Hours</p>
+        <p className="text-xs md:text-sm lg:text-base">Hours</p>
       </div>
-      <div className="py-2 px-4 flex flex-col gap-0 items-center justify-center -ml-4">
-        <p className="text-8xl">
+      <div className="py-1 md:py-2 px-2 md:px-4 flex flex-col gap-0 items-center justify-center -ml-2 md:-ml-4">
+        <p className="text-3xl md:text-5xl lg:text-7xl xl:text-8xl">
           {pad(timeLeft.minutes)}:
         </p>
-        <p>Minutes</p>
+        <p className="text-xs md:text-sm lg:text-base">Minutes</p>
       </div>
-      <div className="py-2 px-4 flex flex-col gap-0 items-center justify-center -ml-4">
-        <p className="text-8xl">
+      <div className="py-1 md:py-2 px-2 md:px-4 flex flex-col gap-0 items-center justify-center -ml-2 md:-ml-4">
+        <p className="text-3xl md:text-5xl lg:text-7xl xl:text-8xl">
           {pad(timeLeft.seconds)}
         </p>
-        <p>Seconds</p>
+        <p className="text-xs md:text-sm lg:text-base">Seconds</p>
       </div>
     </div>
   );

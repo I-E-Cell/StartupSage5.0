@@ -27,25 +27,27 @@ const Section1 = () => {
   };
 
   return (
-    <div className="w-full h-[120vh] bg-[#FFD200] relative border-none outline-none">
+    <div className="w-full min-h-screen md:h-[120vh] bg-[#FFD200] relative border-none outline-none">
       <div className="absolute top-0 -translate-y-1/2">
-        <img src={WaveY} alt="" />
-        <div className="flex gap-8 absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <img src={WaveY} alt="" className="w-full" />
+        <div className="flex gap-4 md:gap-8 absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
           <motion.img
             src={WonderCoin}
             alt="wonder-coin"
             variants={floatVariants}
             animate="float"
+            className="w-12 md:w-16 lg:w-20"
           />
           <motion.img
             src={WonderCoin}
             alt="wonder-coin"
             variants={floatOppositeVariants}
             animate="float"
+            className="w-12 md:w-16 lg:w-20"
           />
         </div>
       </div>
-      Section1
+      <div className="flex items-center justify-center h-full text-2xl md:text-4xl font-[superMario] pt-32">Section1</div>
     </div>
   );
 };

@@ -9,8 +9,8 @@ const Heading = ({
 }) => {
   return (
     <div
-      className={`font-[superMario] text-stroke leading-none tracking-tighter text-7xl md:text-9xl flex flex-col items-center`}
-      style={{ filter: "drop-shadow(0px 16px 0px rgba(0,0,0,1))",  }}
+      className={`font-[superMario] text-stroke leading-none tracking-tighter text-7xl sm:text-7xl md:text-7xl lg:text-8xl xl:text-9xl flex flex-col items-center`}
+      style={{ filter: "drop-shadow(0px 4px 0px rgba(0,0,0,1))"  }}
     >
       {lines.map((line, lineIdx) => (
         <div key={lineIdx}>

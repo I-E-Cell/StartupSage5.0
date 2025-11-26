@@ -43,53 +43,62 @@ const SponsorUs = () => {
       </div>
 
       {/* sponsor us card */}
-      <div className="relative w-full px-52">
+      <div className="relative w-full px-4 md:px-12 lg:px-32 xl:px-52">
         {/* top */}
         <div className="flex">
-          <img src={TlSponsorCard} alt="" />
+          <img src={TlSponsorCard} alt="" className="hidden md:block" />
           <div className="w-full bg-[#FFFF00]" />
-          <img className="transform scale-x-[-1]" src={TlSponsorCard} alt="" />
+          <img className="transform scale-x-[-1] hidden md:block" src={TlSponsorCard} alt="" />
         </div>
 
         {/* middle */}
-        <div className="bg-[#FFFF00] px-12 py-4 text-black   flex items-center justify-center flex-col gap-8">
-          <p className="font-bold text-2xl">Sponsor Us!</p>
+        <div className="bg-[#FFFF00] px-4 md:px-8 lg:px-12 py-4 text-black flex items-center justify-center flex-col gap-4 md:gap-8">
+          <p className="font-bold text-xl md:text-2xl">Sponsor Us!</p>
           {/* sponsor us form */}
           <div className="w-full flex flex-col gap-2">
-            <div className="flex items-center gap-4 w-full px-6 py-4 bg-black/20 rounded-sm">
-              <p className="font-semibold">Individual Name</p>
-              <div className="bg-black h-5 w-0.5" />
+            <div className="flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-4 w-full px-4 md:px-6 py-3 md:py-4 bg-black/20 rounded-sm">
+              <p className="font-semibold whitespace-nowrap text-sm md:text-base">Individual Name</p>
+              <div className="bg-black h-5 w-0.5 hidden md:block" />
+              <input
+                type="text"
+                placeholder="Enter Individual Name"
+                className="ring-0 outline-none border-none bg-transparent w-full text-sm md:text-base"
+              />
+            </div>
+            <div className="flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-4 w-full px-4 md:px-6 py-3 md:py-4 bg-black/20 rounded-sm">
+              <p className="font-semibold whitespace-nowrap text-sm md:text-base">Company Name</p>
+              <div className="bg-black h-5 w-0.5 hidden md:block" />
               <input
                 type="text"
                 placeholder="Enter Company Name"
-                className="ring-0 outline-none border-none"
+                className="ring-0 outline-none border-none bg-transparent w-full text-sm md:text-base"
               />
             </div>
-            <div className="flex items-center gap-4 w-full px-6 py-4 bg-black/20 rounded-sm">
-              <p className="font-semibold">Company Name</p>
-              <div className="bg-black h-5 w-0.5" />
+            <div className="flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-4 w-full px-4 md:px-6 py-3 md:py-4 bg-black/20 rounded-sm">
+              <p className="font-semibold whitespace-nowrap text-sm md:text-base">Email</p>
+              <div className="bg-black h-5 w-0.5 hidden md:block" />
               <input
-                type="text"
-                placeholder="Enter Company Name"
-                className="ring-0 outline-none border-none"
-              />
-            </div>
-            <div className="flex items-center gap-4 w-full px-6 py-4 bg-black/20 rounded-sm">
-              <p className="font-semibold">Email</p>
-              <div className="bg-black h-5 w-0.5" />
-              <input
-                type="text"
+                type="email"
                 placeholder="Enter Email"
-                className="ring-0 outline-none border-none"
+                className="ring-0 outline-none border-none bg-transparent w-full text-sm md:text-base"
               />
             </div>
-            <div className="flex items-center gap-4 w-full px-6 py-4 bg-black/20 rounded-sm">
-              <p className="font-semibold">Phone No.</p>
-              <div className="bg-black h-5 w-0.5" />
+            <div className="flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-4 w-full px-4 md:px-6 py-3 md:py-4 bg-black/20 rounded-sm">
+              <p className="font-semibold whitespace-nowrap text-sm md:text-base">Phone No.</p>
+              <div className="bg-black h-5 w-0.5 hidden md:block" />
               <input
-                type="text"
+                type="tel"
                 placeholder="Enter Phone No."
-                className="ring-0 outline-none border-none"
+                className="ring-0 outline-none border-none bg-transparent w-full text-sm md:text-base"
+              />
+            </div>
+            <div className="flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-4 w-full px-4 md:px-6 py-3 md:py-4 bg-black/20 rounded-sm">
+              <p className="font-semibold whitespace-nowrap text-sm md:text-base">Schedule a Meet</p>
+              <div className="bg-black h-5 w-0.5 hidden md:block" />
+              <input
+                type="datetime-local"
+                placeholder="Select Date and Time"
+                className="ring-0 outline-none border-none bg-transparent w-full text-sm md:text-base"
               />
             </div>
           </div>
@@ -97,17 +106,17 @@ const SponsorUs = () => {
 
         {/* bottom */}
         <div className="flex transform scale-y-[-1]">
-          <img src={TlSponsorCard} alt="" />
+          <img src={TlSponsorCard} alt="" className="hidden md:block" />
           <div className="w-full bg-[#FFFF00]" />
-          <img className="transform scale-x-[-1]" src={TlSponsorCard} alt="" />
+          <img className="transform scale-x-[-1] hidden md:block" src={TlSponsorCard} alt="" />
         </div>
       </div>
 
       {/* mario galaxy animations */}
-      <div className="relative w-full flex justify-center items-start">
+      <div className="relative w-full flex justify-center items-start gap-2 md:gap-0">
         {/* blue plushie */}
         <motion.div
-          className="w-36 self-center"
+          className="w-16 md:w-24 lg:w-36 self-center"
           animate="animate"
           variants={floatVariants}
         >
@@ -116,14 +125,14 @@ const SponsorUs = () => {
 
         {/* mario animation */}
         <motion.div
-          className="w-1/3"
+          className="w-1/2 md:w-2/5 lg:w-1/3"
           animate="animate"
           variants={floatVariants}
         >
           <img src={Mario} alt="" />
         </motion.div>
         {/* yellow plushie */}
-        <motion.div className="w-40" animate="animate" variants={floatVariants}>
+        <motion.div className="w-20 md:w-32 lg:w-40" animate="animate" variants={floatVariants}>
           <img src={YellowP} alt="" />
         </motion.div>
       </div>
@@ -164,11 +173,11 @@ const SponsorUs = () => {
       </motion.div>
 
       {/* sponsor us text */}
-      <div className="text-white bg-black w-full relative py-8 text-center">
+      <div className="text-white bg-black w-full relative py-8 text-center px-4">
         <div className="bg-linear-to-t from-black to-transparent absolute top-0 w-full h-20 -translate-y-full" />
         <div className="mx-auto max-w-2xl">
-          <h1 className="text-xl">As a Sponsor:</h1>
-          <div className="text-left flex flex-col gap-2 mt-4">
+          <h1 className="text-lg md:text-xl">As a Sponsor:</h1>
+          <div className="text-left flex flex-col gap-2 mt-4 text-sm md:text-base">
             <div className="flex gap-2 items-center">
               <img src={Flash} alt="" />
               <p>

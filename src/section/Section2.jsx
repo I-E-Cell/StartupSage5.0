@@ -40,29 +40,32 @@ const Section2 = () => {
   };
 
   return (
-    <div className="w-full h-screen relative bg-linear-to-b from-[#0064C8] via-[#003C96] to-[#0064C8]">
+    <div className="w-full min-h-screen relative bg-linear-to-b from-[#0064C8] via-[#003C96] to-[#0064C8] overflow-hidden">
       {/* top wave and coin animation */}
-      <div className="absolute top-0 -translate-y-full">
-        <img src={WaveB} alt="wave-blue" />
+      <div className="absolute top-0 -translate-y-full w-full">
+        <img src={WaveB} alt="wave-blue" className="w-full" />
         {/* coins */}
-        <div className="flex gap-8 absolute top-0 md:top-24 left-0 md:left-64">
+        <div className="flex gap-4 md:gap-8 absolute top-0 md:top-24 left-4 md:left-32 lg:left-64">
           <motion.img
             src={WonderCoin}
             alt="wonder-coin"
             variants={floatVariants}
             animate="float"
+            className="w-12 md:w-16 lg:w-20"
           />
           <motion.img
             src={WonderCoin}
             alt="wonder-coin"
             variants={floatOppositeVariants}
             animate="float"
+            className="w-12 md:w-16 lg:w-20"
           />
           <motion.img
             src={WonderCoin}
             alt="wonder-coin"
             variants={floatVariants}
             animate="float"
+            className="w-12 md:w-16 lg:w-20"
           />
         </div>
       </div>
@@ -73,9 +76,9 @@ const Section2 = () => {
         variants={waveVariant}
         animate="animate"
       >
-        <img className="w-80" src={Luigi} alt="" />
+        <img className="w-40 md:w-60 lg:w-80" src={Luigi} alt="" />
       </motion.div>
-      Section2
+      <div className="flex items-center justify-center h-full text-2xl md:text-4xl font-[superMario] pt-32">Section2</div>
     </div>
   );
 };
