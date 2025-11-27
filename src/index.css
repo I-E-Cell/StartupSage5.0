@@ -8,6 +8,13 @@
 }
 
 @font-face {
+  font-family: "lilita";
+  src: url("/assets/fonts/LilitaOne-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "space";
   src: url("/assets/fonts/SpaceMono-Regular.ttf") format("truetype");
   font-weight: 400;

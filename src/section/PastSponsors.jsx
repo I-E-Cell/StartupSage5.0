@@ -251,7 +251,7 @@ const PastSponsors = () => {
       </div>
 
       {/* Wonder flower */}
-      <div className="absolute bottom-0 left-0 z-20  w-1/2 flex justify-center items-end">
+      <div className="absolute bottom-0 left-0 z-20 w-full md:w-1/2 flex justify-start md:justify-center items-end">
         <WonderFlower />
       </div>
     </div>

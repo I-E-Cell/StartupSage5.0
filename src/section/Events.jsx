@@ -9,7 +9,7 @@ import Event4 from "/assets/images/Event4.webp";
 const Events = () => {
   return (
     <div
-      className="relative w-full pb-32 md:pb-64 lg:pb-96 bg-black text-white px-4"
+      className="relative w-full pb-32 md:pb-64 lg:pb-96 bg-black text-white px-4 md:px-0"
       style={{
         background: `url(${Stones})`,
         backgroundSize: "50%",

@@ -40,7 +40,7 @@ const Section2 = () => {
   };
 
   return (
-    <div className="w-full min-h-screen relative bg-linear-to-b from-[#0064C8] via-[#003C96] to-[#0064C8] overflow-hidden">
+    <div className="w-full min-h-screen relative bg-linear-to-b from-[#0064C8] via-[#003C96] to-[#0064C8]">
       {/* top wave and coin animation */}
       <div className="absolute top-0 -translate-y-full w-full">
         <img src={WaveB} alt="wave-blue" className="w-full" />

@@ -23,7 +23,7 @@ const Timer = () => {
       </div>
 
       {/* pipes */}
-      <div className="absolute left-0 top-1/2 -translate-y-1/2 hidden lg:flex w-full justify-between">
+      <div className="absolute left-0 top-1/2 -translate-y-1/2 lg:flex w-full justify-between">
         <img src={Pipe} className="h-64 lg:h-80 xl:h-96 rotate-180" alt="pipe-left" />
         <img src={Pipe} className="h-64 lg:h-80 xl:h-96" alt="pipe-right" />
       </div>
@@ -59,7 +59,7 @@ const Timer = () => {
       </div>
 
       {/* Wonder flower */}
-      <div className="absolute -bottom-4 -right-16 md:-right-32 w-1/2 md:w-1/3 hidden md:flex justify-center items-end">
+      <div className="absolute -bottom-4 md:-right-32 w-full md:w-1/2 flex justify-start md:justify-center items-end">
         <WonderFlower />
       </div>
     </div>
