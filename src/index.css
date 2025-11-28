@@ -1,87 +1,29 @@
 @import "tailwindcss";
 
-
 @font-face {
-  font-family: "PressStart2P-vaV7";
-  src: url("/fonts/PressStart2P-vaV7.ttf") format("truetype");
+  font-family: "superMario";
+  src: url("/assets/fonts/SuperMario256.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "rainyhearts";
-  src: url("/fonts/rainyhearts.ttf") format("truetype");
+  font-family: "lilita";
+  src: url("/assets/fonts/LilitaOne-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
+@font-face {
+  font-family: "nougat";
+  src: url("/assets/fonts/Nougat-Extrabold.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
 
 @font-face {
-    font-family: "JetbrainsMonoExtraboldItalic-9YKO5";
-    src: url("/fonts/JetbrainsMonoExtraboldItalic-9YKO5.ttf") format("truetype");
-    font-weight: 800;
-    font-style: italic;
-  }
-
-  @font-face {
-    font-family: "JetbrainsMonoExtrabold-ywLd5";
-    src: url("/fonts/JetbrainsMonoExtrabold-ywLd5.ttf") format("truetype");
-    font-weight: 800;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: "JetbrainsMonoItalic-lg91X";
-    src: url("/fonts/JetbrainsMonoItalic-lg91X.ttf") format("truetype");
-    font-weight: 400;
-    font-style: italic;
-  }
-
-  @font-face {
-    font-family: "JetbrainsMonoMediumItalic-1GDgL";
-    src: url("/fonts/JetbrainsMonoMediumItalic-1GDgL.ttf") format("truetype");
-    font-weight: 500;
-    font-style: italic;
-  }
-
-  @font-face {
-    font-family: "JetbrainsMonoMedium-nRvBM";
-    src: url("/fonts/JetbrainsMonoMedium-nRvBM.ttf") format("truetype");
-    font-weight: 500;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: "JetbrainsMonoRegular-RpvmM";
-    src: url("/fonts/JetbrainsMonoRegular-RpvmM.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: "JetbrainsMonoBold-51Xez";
-    src: url("/fonts/JetbrainsMonoBold-51Xez.ttf") format("truetype");
-    font-weight: 700;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: "JetbrainsMonoBoldItalic-6YyW6";
-    src: url("/fonts/JetbrainsMonoBoldItalic-6YyW6.ttf") format("truetype");
-    font-weight: 700;
-    font-style: italic;
-  }
-
-@theme {
-  --font-arcade: "PressStart2P-vaV7", sans-serif;
-  --font-rainy: "rainyhearts", sans-serif;
-  --font-jetbrains-extrabold-italic: "JetbrainsMonoExtraboldItalic-9YKO5", monospace;
-  --font-jetbrains-extrabold: "JetbrainsMonoExtrabold-ywLd5", monospace;
-  --font-jetbrains-italic: "JetbrainsMonoItalic-lg91X", monospace;
-  --font-jetbrains-medium-italic: "JetbrainsMonoMediumItalic-1GDgL", monospace;
-  --font-jetbrains-medium: "JetbrainsMonoMedium-nRvBM", monospace;
-  --font-jetbrains-regular: "JetbrainsMonoRegular-RpvmM", monospace;
-  --font-jetbrains-bold: "JetbrainsMonoBold-51Xez", monospace;
-  --font-jetbrains-bold-italic: "JetbrainsMonoBoldItalic-6YyW6", monospace;
-
+  font-family: "space";
+  src: url("/assets/fonts/SpaceMono-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
 }
