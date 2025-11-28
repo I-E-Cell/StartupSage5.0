@@ -27,7 +27,10 @@ const Section1 = () => {
   };
 
   return (
-    <div className="w-full min-h-screen md:h-[120vh] bg-[#FFD200] relative border-none outline-none">
+    <div
+      id="timeline"
+      className="w-full min-h-screen md:h-[120vh] bg-[#FFD200] relative border-none outline-none"
+    >
       <div className="absolute top-0 -translate-y-1/2">
         <img src={WaveY} alt="" className="w-full" />
         <div className="flex gap-4 md:gap-8 absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -47,7 +50,9 @@ const Section1 = () => {
           />
         </div>
       </div>
-      <div className="flex items-center justify-center h-full text-2xl md:text-4xl font-[superMario] pt-32">Section1</div>
+      <div className="flex items-center justify-center h-full text-2xl md:text-4xl font-[superMario] pt-32">
+        Section1
+      </div>
     </div>
   );
 };

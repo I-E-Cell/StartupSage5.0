@@ -146,6 +146,7 @@ const PastSponsors = () => {
 
   return (
     <div
+      id="sponsors"
       className="w-full relative bg-[#0064C8] flex flex-col items-center justify-start pt-36 pb-44"
       style={{
         background: `url(${BlueBg})`,

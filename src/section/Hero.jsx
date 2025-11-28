@@ -1,44 +1,113 @@
-import Heading from "../components/Heading";
-import Navbar from "../components/Navbar";
-import Map from "/assets/images/Map.webp";
 import Button from "../components/Button";
+import HeroBtm from "/assets/images/HeroBtm.webp";
+import HeroGlow from "/assets/images/HeroGlow.svg";
+import Edition from "/assets/images/Edition.svg";
+import TrophyReward from "/assets/images/TrophyReward.svg";
+import TagBtm from "/assets/images/TagBtm.svg";
+import TagTop from "/assets/images/TagTop.svg";
+import Heading from "/assets/images/Heading.svg";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <div className="relative bg-[#0064C8] w-full min-h-screen md:h-[140vh] px-4 md:px-12 lg:px-24 flex flex-col gap-12 md:gap-24 pb-12">
-      <Navbar />
-
-      {/* main heading */}
-      <div className="flex flex-col gap-6 md:gap-12 justify-center items-center mt-8 md:mt-0">
-        <Heading />
-        {/* tagline */}
-        <p
-          className="text-base md:text-xl lg:text-2xl font-bold text-white uppercase font-[superMario] tracking-widest text-center px-4"
-          style={{ filter: "drop-shadow(0px 4px 4px rgba(0,0,0,1))" }}
-        >
-          From Ore to Empire
-        </p>
-        <Button />
-        {/* event dates */}
-        <div
-          className="w-11/12 md:w-3/4 lg:w-1/2 h-64 md:h-80 lg:h-96 px-4 md:px-8 lg:px-10 py-4 md:py-6 text-5xl md:text-7xl lg:text-9xl font-[superMario] text-gray-900 flex gap-3 md:gap-6 justify-center items-center"
-          style={{
-            background: `url(${Map})`,
-            backgroundSize: "95%",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
+    <div className="relative bg-linear-to-b from-yellow-400 to-yellow-800 w-full flex flex-col pb-32">
+      {/* content div */}
+      <div className="w-full h-auto relative flex items-center justify-center flex-col gap-24 z-2 mt-52">
+        {/* <Heading /> */}
+        <motion.div
+          animate={{ y: [20, 0] }}
+          transition={{
+            duration: 2,
+            ease: "linear",
+            repeat: Infinity,
+            repeatType: "reverse",
           }}
+          className="relative font-[nougat] tracking-tighter flex flex-col items-center uppercase text-white pointer-events-none"
         >
-          <div className="flex flex-col justify-center items-center">
-            <p>10</p>
-            <p className="text-2xl md:text-4xl lg:text-5xl">Jan</p>
-          </div>
-          <p>-</p>
-          <div className="flex flex-col justify-center items-center">
-            <p>15</p>
-            <p className="text-2xl md:text-4xl lg:text-5xl">Jan</p>
-          </div>
+          {/* White background behind the heading */}
+          <div className="absolute top-0 left-0 rounded-full blur-2xl opacity-100 inset-0 bg-white" />
+          {/* main heading image */}
+          <img src={Heading} className="z-2 scale-110 md:scale-150" alt="" />
+        </motion.div>
+
+        {/* tagline */}
+        <div
+          style={{ filter: "drop-shadow(0px 6px 0px rgba(0,0,0,0.5))" }}
+          className="relative font-[lilita] uppercase text-white text-2xl border-4 border-black py-3 px-6 rounded-md -skew-4 bg-[#2574FF]"
+        >
+          <img
+            src={TagTop}
+            className="w-full absolute top-0 left-0 transform -scale-x-[1] pointer-events-none"
+            alt="tagline-top"
+          />
+          <p>From Ore To Empire</p>
+          <img
+            className="absolute top-0 right-0 translate-x-3/4 rotate-12 w-20 pointer-events-none"
+            src={TrophyReward}
+            alt="+8trophy"
+          />
+          <img
+            src={TagBtm}
+            className="w-full absolute bottom-0 left-0 pointer-events-none"
+            alt="tagline-bottom"
+          />
         </div>
+
+        {/* register btn */}
+        <Button title="Register on Unstop" text="text-3xl" />
+      </div>
+
+      {/* Rotating Glow */}
+      <motion.div className="w-full h-full absolute top-0 opacity-20 scale-[2.5]">
+        <motion.img
+          src={HeroGlow}
+          className="w-full h-full object-cover object-center pointer-events-none"
+          alt="rotating-glow"
+          animate={{
+            rotate: 360,
+          }}
+          transition={{
+            repeat: Infinity,
+            duration: 20,
+            ease: "linear",
+          }}
+        />
+      </motion.div>
+
+      {/* text marquee */}
+      <motion.div
+        className="absolute top-1/5 left-0 -translate-y-1/2 font-[nougat] uppercase text-8xl text-white opacity-40 rotate-3 whitespace-nowrap flex items-center gap-12"
+        animate={{
+          x: ["0%", "-50%"],
+        }}
+        transition={{
+          repeat: Infinity,
+          duration: 15,
+          ease: "linear",
+        }}
+      >
+        <img
+          src={Edition}
+          className="h-36 pointer-events-none"
+          alt="editionV"
+        />
+        <p>From Ore To Empire</p>
+        <img
+          src={Edition}
+          className="h-36 pointer-events-none"
+          alt="editionV"
+        />
+        <p>From Ore To Empire</p>
+        <img
+          src={Edition}
+          className="h-36 pointer-events-none"
+          alt="editionV"
+        />
+      </motion.div>
+
+      {/* Bottom Image */}
+      <div className="w-full absolute bottom-0">
+        <img src={HeroBtm} className="w-full" alt="" />
       </div>
     </div>
   );

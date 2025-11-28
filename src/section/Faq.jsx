@@ -4,8 +4,11 @@ import Accordion from "../components/Accordion";
 
 const Faq = () => {
   return (
-    <div className="w-full bg-white relative flex flex-col items-center py-12 pb-44
-     justify-start gap-12">
+    <div
+      id="faqs"
+      className="w-full bg-white relative flex flex-col items-center py-12 pb-44
+     justify-start gap-12"
+    >
       {/* clouds */}
       <div className="absolute top-0 -translate-y-full scale-110">
         <img className="w-full" src={Clouds} alt="" />

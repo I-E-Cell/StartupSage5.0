@@ -11,6 +11,7 @@ import Footer from "./section/Footer";
 import Events from "./section/Events";
 import PastSponsors from "./section/PastSponsors";
 import Faq from "./section/Faq";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -25,6 +26,7 @@ const App = () => {
   return (
     <div className="h-screen w-screen font-[space] overflow-x-hidden relative">
       {/* {isLoading && <Loader />} */}
+      <Navbar />
       <Hero />
       <Timer />
       <PrizePool />

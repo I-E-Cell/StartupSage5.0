@@ -21,6 +21,7 @@ const PrizePool = () => {
   };
   return (
     <div
+      id="prize-pool"
       className="relative w-full min-h-screen md:h-[120vh] bg-black text-white flex justify-center items-center px-4"
       style={{
         background: `url(${BlPattern})`,

@@ -13,7 +13,6 @@ import Bomb from "/assets/images/bomb.svg";
 import Diamond from "/assets/images/diamond.svg";
 import Marquee1 from "/assets/images/marquee1.webp";
 
-
 const SponsorUs = () => {
   const floatVariants = {
     animate: {
@@ -27,6 +26,7 @@ const SponsorUs = () => {
   };
   return (
     <div
+      id="sponsorsUs"
       className="relative w-full bg-black text-white flex flex-col gap-24 justify-start pt-32 items-center"
       style={{
         background: `url(${BlPattern})`,
@@ -48,7 +48,11 @@ const SponsorUs = () => {
         <div className="flex">
           <img src={TlSponsorCard} alt="" className="hidden md:block" />
           <div className="w-full bg-[#FFFF00]" />
-          <img className="transform scale-x-[-1] hidden md:block" src={TlSponsorCard} alt="" />
+          <img
+            className="transform scale-x-[-1] hidden md:block"
+            src={TlSponsorCard}
+            alt=""
+          />
         </div>
 
         {/* middle */}
@@ -57,7 +61,9 @@ const SponsorUs = () => {
           {/* sponsor us form */}
           <div className="w-full flex flex-col gap-2">
             <div className="flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-4 w-full px-4 md:px-6 py-3 md:py-4 bg-black/20 rounded-sm">
-              <p className="font-semibold whitespace-nowrap text-sm md:text-base">Individual Name</p>
+              <p className="font-semibold whitespace-nowrap text-sm md:text-base">
+                Individual Name
+              </p>
               <div className="bg-black h-5 w-0.5 hidden md:block" />
               <input
                 type="text"
@@ -66,7 +72,9 @@ const SponsorUs = () => {
               />
             </div>
             <div className="flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-4 w-full px-4 md:px-6 py-3 md:py-4 bg-black/20 rounded-sm">
-              <p className="font-semibold whitespace-nowrap text-sm md:text-base">Company Name</p>
+              <p className="font-semibold whitespace-nowrap text-sm md:text-base">
+                Company Name
+              </p>
               <div className="bg-black h-5 w-0.5 hidden md:block" />
               <input
                 type="text"
@@ -75,7 +83,9 @@ const SponsorUs = () => {
               />
             </div>
             <div className="flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-4 w-full px-4 md:px-6 py-3 md:py-4 bg-black/20 rounded-sm">
-              <p className="font-semibold whitespace-nowrap text-sm md:text-base">Email</p>
+              <p className="font-semibold whitespace-nowrap text-sm md:text-base">
+                Email
+              </p>
               <div className="bg-black h-5 w-0.5 hidden md:block" />
               <input
                 type="email"
@@ -84,7 +94,9 @@ const SponsorUs = () => {
               />
             </div>
             <div className="flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-4 w-full px-4 md:px-6 py-3 md:py-4 bg-black/20 rounded-sm">
-              <p className="font-semibold whitespace-nowrap text-sm md:text-base">Phone No.</p>
+              <p className="font-semibold whitespace-nowrap text-sm md:text-base">
+                Phone No.
+              </p>
               <div className="bg-black h-5 w-0.5 hidden md:block" />
               <input
                 type="tel"
@@ -93,7 +105,9 @@ const SponsorUs = () => {
               />
             </div>
             <div className="flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-4 w-full px-4 md:px-6 py-3 md:py-4 bg-black/20 rounded-sm">
-              <p className="font-semibold whitespace-nowrap text-sm md:text-base">Schedule a Meet</p>
+              <p className="font-semibold whitespace-nowrap text-sm md:text-base">
+                Schedule a Meet
+              </p>
               <div className="bg-black h-5 w-0.5 hidden md:block" />
               <input
                 type="datetime-local"
@@ -108,7 +122,11 @@ const SponsorUs = () => {
         <div className="flex transform scale-y-[-1]">
           <img src={TlSponsorCard} alt="" className="hidden md:block" />
           <div className="w-full bg-[#FFFF00]" />
-          <img className="transform scale-x-[-1] hidden md:block" src={TlSponsorCard} alt="" />
+          <img
+            className="transform scale-x-[-1] hidden md:block"
+            src={TlSponsorCard}
+            alt=""
+          />
         </div>
       </div>
 
@@ -132,16 +150,19 @@ const SponsorUs = () => {
           <img src={Mario} alt="" />
         </motion.div>
         {/* yellow plushie */}
-        <motion.div className="w-20 md:w-32 lg:w-40" animate="animate" variants={floatVariants}>
+        <motion.div
+          className="w-20 md:w-32 lg:w-40"
+          animate="animate"
+          variants={floatVariants}
+        >
           <img src={YellowP} alt="" />
         </motion.div>
       </div>
 
       {/* infinite marquee */}
-      <marquee
-        direction="left"
-        behavior="scroll"
-        scrollamount="10"
+      <motion.div
+        animate={{ x: ["0%", "-50%"] }}
+        transition={{ duration: 12, ease: "linear", repeat: Infinity }}
         className="w-full text-white font-[superMario] -mt-44 text-8xl whitespace-nowrap -rotate-3"
       >
         <div className="flex gap-8">
@@ -152,9 +173,8 @@ const SponsorUs = () => {
           <img src={Marquee1} className="w-64" alt="" />
           <img src={Marquee1} className="w-64" alt="" />
           <img src={Marquee1} className="w-64" alt="" />
-
         </div>
-      </marquee>
+      </motion.div>
 
       {/* barrel */}
       <motion.div
