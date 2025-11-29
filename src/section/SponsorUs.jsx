@@ -199,7 +199,7 @@ const SponsorUs = () => {
           <h1 className="text-lg md:text-xl">As a Sponsor:</h1>
           <div className="text-left flex flex-col gap-2 mt-4 text-sm md:text-base">
             <div className="flex gap-2 items-center">
-              <img src={Flash} alt="" />
+              <img src={Flash} className="h-10" alt="" />
               <p>
                 Elevate your brand visibility among thousands of entrepreneurs.
               </p>
