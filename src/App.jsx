@@ -32,7 +32,7 @@ const App = () => {
       <PrizePool />
       <Events />
       <Section1 />
-      <Section2 />
+      {/* <Section2 /> */}
       <Faq />
       <PastSponsors />
       <SponsorUs />
