@@ -12,6 +12,8 @@ import Events from "./section/Events";
 import PastSponsors from "./section/PastSponsors";
 import Faq from "./section/Faq";
 import Navbar from "./components/Navbar";
+import Hero2 from "./section/Hero2";
+import Timer2 from "./section/Timer2";
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -27,8 +29,10 @@ const App = () => {
     <div className="h-screen w-screen font-[space] overflow-x-hidden relative">
       {/* {isLoading && <Loader />} */}
       <Navbar />
-      <Hero />
-      <Timer />
+      {/* <Hero /> */}
+      <Hero2/>
+      <Timer2/>
+      {/* <Timer /> */}
       <PrizePool />
       <Events />
       <Section1 />
